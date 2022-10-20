@@ -1,57 +1,5 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-.container{
-    width: 100%;
-    max-width: 1280px;
-    margin: auto;
-}
-button{
-    border: none;
-}
-header { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 84px;
-}
-h1 {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 56px;
-}
-.header-nav{
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-}
-.header-nav nav {  
-    width: 70%;
-}
-.header-nav nav ul{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-.header-nav a{
-    text-decoration: none;
-    color: #394149;
-}
-.header-button{
-    background: rgba(245, 138, 7, 0.1);
-    border-radius: 31px;
-    color:rgba(245, 138, 7, 1);
-    width: 173px;
-    height: 52px;
-    border: none;
-}
-section {
-    width: 100%;
-    display: flex;
- }
+
+
  .section1-colour{
     background: #DCEAF5;
  }
@@ -379,58 +327,7 @@ section {
     color: #F58A07;
     text-decoration: none;
 }
-footer{
-    width: 100%;
-    height: 463px;
-    background: #063255;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-.footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items:flex-start;
-}
-.footer-top a{
-    text-decoration: none;
-    color: #FFFFFF;
-}
-.footer-top h2 {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-}
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-.footer-company {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.footer-bottom {
-    display: flex;
-}
-.footerbottom-right {
-    display: flex;
-    justify-content: space-between;
-}
-.footer-company input {
-    width: 342px;
-    height: 54px;
-    background: #FFFFFF;
-    border-radius: 31px;
-}
-.footer-company button {
-    width: 156px;
-    height: 54px;
-    background: #F58A07;
-    border-radius: 31px;
-}
+
 .header {
     width: 100%;
     height: 650px;
@@ -478,3 +375,86 @@ footer{
 .feature2-text {
     width: 40%;
 }
+.careers {
+    width: 100%;
+    height: 552px;
+}
+.careers-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+.careers-cards1 {
+    width: 30%;
+    height: 181px;
+    background: rgba(193, 228, 255, 0.3);
+    border-radius: 20px;
+}
+.careers-cards1 a {
+    text-decoration: none;
+    color: #F58A07;
+}
+.blog {
+    width: 100%;
+    height: 749px;
+    background: #DCEAF5;
+}
+.blog-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blog-header .headertext-img {
+    display: flex;
+    justify-content: space-evenly;
+}
+.headertext-text a {
+    text-decoration: none;
+    color: #F58A07;
+}
+.blog-latestsection {
+    width: 100%;
+    height: 1174px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 128px;
+    margin-bottom: 128px;
+}
+.cards-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+} 
+.blog .cards {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+ }
+ .blog-card {
+    width: 400px;
+    height: 507px;
+    background: #EDF7FF;
+    border-radius: 20px;
+    margin:10px;
+ }
+ .blog-card h2,a,p {
+    margin: 10px;
+ }
+ .blog-card a {
+    text-decoration: none;
+    color: #F58A07;
+ }
+ .blog-post {
+    width: 100%;
+ }
+ .blogpost-text {
+    margin: px;
+ }
