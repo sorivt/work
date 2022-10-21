@@ -1,5 +1,4 @@
 
-
  .section1-colour{
     background: #DCEAF5;
  }
@@ -8,8 +7,6 @@
  }
 .section1-right {
     width: 50%;
-    display: flex;
-    flex-direction: end;
     margin-top: 58px;
 }
 .section1 {
@@ -27,27 +24,26 @@
     width: 199px;
     height: 54px;
     border-radius: 27px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.button2 {
+    color: #1D3444;
+    background: none;
+    width: 199px;
+    height: 54px;
+    border-radius: 27px;
 }
 .logos {
-    display: flex;
-    justify-content: space-between; 
+    padding: 20px;
 }
 .section2 {
     height: 740px;
     width: 100%;
+    margin-bottom: 50px;
 }
 .section2-up {
     width: 55%;
-}
-.section2-up h1 { 
-    font-weight: 600;
-    line-height: 56px;
-    font-size: 48px;
-}
-.section2-down p {
-    font-weight: 500;
-    font-size:18px;
-    line-height: 30px;
 }
 .section2-down {
     width: 100%;
@@ -80,9 +76,6 @@
 }
 .section3-up p{
     width: 50%;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 30px;
     height: 102px;
 }
 .section3-down{
@@ -95,9 +88,15 @@
     width: 30%; 
     padding: 30px;
 }
-.about-left{
-    width: 40%;
-    height: 549px;
+.about {
+    width: 100%;
+    height: 667px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 96px;
+    margin-bottom: 96px;
+    border-radius: 20px;
 }
 .about-cards {
     display: flex;
@@ -110,17 +109,10 @@
 .about-cards .about-card2 {
     width: 45%;
 }
-.about h1 {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 56px;
-    width: 569px;
-    height: 157px;
-}
-.about p{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 30px;
+.about-left {
+    width: 40%;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 .about h2 {
     font-weight: 700;
@@ -136,22 +128,12 @@
 .about-right {
     width:50%;
     height: 667px;
-    mix-blend-mode: multiply;
+    background-image: url(./images/about-image.png);
     position: relative;
 }
-.about-right .orange{
+.about-right .orange img{
     position: absolute;
-    background-color: #F58A07;
-}
-.about {
-    width: 100%;
-    height: 667px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 96px;
-    margin-bottom: 96px;
-    border-radius: 20px;
+    mix-blend-mode:multiply;
 }
 .service {
     width: 100%;
@@ -160,30 +142,31 @@
     border-radius: 20px;
     margin-bottom: 96px;
 }
-.service .service-action {
+.service-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service .service-bottom {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.service .service-left {
+.service-left {
     width: 40%;
 }
-.service .service-right {
+.service-right {
     width: 40%;
 }
 .service-right img {
+    position: absolute;
+}
+.service-right img{
+    background-image: url(./images/team.png);
+    mix-blend-mode: multiply;
+    position: relative;
     width: 472px;
     height: 466px;
-}
-.service-left h1 {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 56px;  
-}
-.service-left p {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 30px;
 }
 .service-left a {
     font-weight: 500;
@@ -196,12 +179,7 @@
     display: flex;
     justify-content: space-evenly;
 }
-.service-up {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.service-buttons .service-button1 {
+.service-button1 {
     background: #FFFFFF;
     border-radius: 31px;
     font-weight: 600;
@@ -209,17 +187,17 @@
     line-height: 24px;
     color: #F58A07;
 }
-.service-buttons .service-button2 {
+.service-button2 {
     border-radius: 31px;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+    background: none;
+    color: #1D3444;
+    border: 1px solid #A8BCCC
 }
-.service-buttons .service-button3 {
-    border-radius: 31px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+.service-ribbon img{ 
+    padding: 0%;
 }
 .cta {
     width: 100%;
@@ -231,20 +209,16 @@
     width: 50%;
     height: 518px;
 }
-.cta .cta-right {
+.cta-right {
     width: 50%;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    padding-left: 200px;
 }
-.cta .cta-right h1 {
+.cta-right h1 {
     width: 50%;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 56px;
     color: #FFFFFF;
 }
-.cta .cta-right button{
+.cta-right button{
     width: 216px;
     height: 54px;
     left: 1088px;
@@ -253,7 +227,7 @@
     border-radius: 31px;  
     border: none;
 }
-.cta .cta-right button a{
+.cta-right button a{
     color: #F58A07;
     text-decoration: none;
 }
@@ -267,67 +241,30 @@
 .video-left{
     width: 50%;
 }
-.video-left h1{
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 56px;
-}
-.video-left p {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 30px;
-}
 .video-left a {
     color: #F58A07;
     text-decoration: none;
 }
-.video-left .videoleft-profile{
+ .videoleft-profile{
     display: flex;
     align-items: center;
 }
-.video .video-right img{
-    position: relative;
+.play-button {
+    position: absolute;
+    width: 51px;
+    height: 51px; 
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
 }
 .video-right {
+    width: 50%;
     display: flex;
+    background-image: url(./images/video-image.png);
+    position: relative;
+    background-repeat: no-repeat;
 }
-.video-right a{
-    position: absolute;
-}
-.latest-section {
-    width: 100%;
-    height: 819px;
-    background: #DCEAF5;
-}
-.cards {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-.latest-card {
-    width: 400px;
-    height: 507px;
-    background: #FFFFFF;
-    border-radius: 20px;
-    margin: auto;
-}
-.latest-section h1{
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 56px;
-    padding-top: 96px;
-}
-.latest-card h2 {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-}
-.latest-card a {
-    color: #F58A07;
-    text-decoration: none;
-}
-
 .header {
     width: 100%;
     height: 650px;
@@ -456,5 +393,121 @@
     width: 100%;
  }
  .blogpost-text {
-    margin: px;
+    width: 100%;
+    margin-left: auto;
+    padding: 80px 264px;
  }
+ .blogpost-profile {
+    display: flex;
+ }
+ .career2-job {
+    display: flex;
+    justify-content: space-between;
+ }
+ .career2-header {
+    margin-bottom: 40px;
+ }
+ .career2-details {
+    width: 100%;
+    background: rgba(193, 228, 255, 0.3);
+    border-radius: 20px;
+    display: flex;
+    padding: 40px;
+    justify-content: space-evenly;
+ }
+ .details-left {
+    width: 50%;
+ }
+ .details-right {
+    width: 842px;
+    height: 308px;
+ }
+.details-orange {
+    color: #F58A07;
+}
+.input-top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input {
+    width: 49%;
+    height: 54px;
+    margin-top: 15px;
+    margin-bottom:15px;
+    background: rgba(210, 218, 237, 0.17);
+    border-radius: 27px;
+    border: none;
+}
+.inputbottom{
+    width: 100%;
+    height: 215px;
+    background: rgba(210, 218, 237, 0.17);
+    border-radius: 27px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.apply-button {
+    width: 119px;
+    height: 54px;
+    background: #F58A07;
+    border-radius: 31px;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+.contactus-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.header-left {
+    width: 45%;
+}
+.header-right {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.contact-sec {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-left {
+    width: 45%;
+}
+.contact-input {
+    background: rgba(210, 218, 237, 0.17);
+    border-radius: 27px;   
+    height: 54px; 
+    width: 100%;
+    border: none;
+    margin-bottom: 15px;
+}
+.contact-input-big {
+    background: rgba(210, 218, 237, 0.17);
+    border-radius: 27px;
+    height: 160px;  
+    width: 100%; 
+    border: none;
+    margin-bottom: 40px;
+}
+.contact-right{
+    width: 50%;
+}
+.contact-right img {
+    border-radius: 20px;
+}
+.contact-button {
+    width: 119px;
+    height: 54px;
+    background: #F58A07;
+    border-radius: 31px;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
