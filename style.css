@@ -26,6 +26,7 @@
     border-radius: 27px;
     margin-bottom: 40px;
     margin-top: 20px;
+    color: white;
 }
 .button2 {
     color: #1D3444;
@@ -34,13 +35,15 @@
     height: 54px;
     border-radius: 27px;
 }
+.section1-work {
+    color: rgba(57, 65, 73, 0.5);
+}
 .logos {
     padding: 20px;
 }
 .section2 {
     height: 740px;
     width: 100%;
-    margin-bottom: 50px;
 }
 .section2-up {
     width: 55%;
@@ -49,6 +52,8 @@
     width: 100%;
     display: flex;
     height: 740px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .section2-down a{
     text-decoration: none;
@@ -125,15 +130,17 @@
     font-size: 24px;
     line-height: 106.5%;
 }
-.about-right {
-    width:50%;
-    height: 667px;
-    background-image: url(./images/about-image.png);
-    position: relative;
+.aboutright-img{
+    height: 670px;
+    border-radius: 20px;
 }
-.about-right .orange img{
+.multiply {
+    mix-blend-mode: multiply;
+    background: #F58A07;
+    width: 153px;
+    height: 100%;
     position: absolute;
-    mix-blend-mode:multiply;
+    border-radius: 20px 0 0 20px;
 }
 .service {
     width: 100%;
@@ -158,15 +165,13 @@
 .service-right {
     width: 40%;
 }
-.service-right img {
-    position: absolute;
-}
-.service-right img{
-    background-image: url(./images/team.png);
+.service-multiply2 {
     mix-blend-mode: multiply;
-    position: relative;
-    width: 472px;
+    background: #F58A07;
+    width: 120px;
     height: 466px;
+    position: absolute;
+    border-radius: 20px 0 0 20px;
 }
 .service-left a {
     font-weight: 500;
@@ -197,7 +202,8 @@
     border: 1px solid #A8BCCC
 }
 .service-ribbon img{ 
-    padding: 0%;
+    margin-top: -16px;
+    margin-right: -16px;
 }
 .cta {
     width: 100%;
@@ -241,37 +247,40 @@
 .video-left{
     width: 50%;
 }
+.video-left h3 {
+    margin-right: 10px;
+}
 .video-left a {
     color: #F58A07;
     text-decoration: none;
 }
  .videoleft-profile{
     display: flex;
-    align-items: center;
 }
 .play-button {
-    position: absolute;
     width: 51px;
     height: 51px; 
     background: #FFFFFF;
     display: flex;
     align-items: center;
     border-radius: 50%;
+    justify-content: center;
 }
 .video-right {
     width: 50%;
-    display: flex;
     background-image: url(./images/video-image.png);
-    position: relative;
     background-repeat: no-repeat;
-}
+    display: flex;
+    align-items: end;
+    padding: 50px;
+    color: white;
+}   
 .header {
     width: 100%;
     height: 650px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 48px;
 }
 .header-text {
     width: 40%;

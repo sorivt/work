@@ -10,6 +10,9 @@
 button{
     border: none;
 }
+a {
+    text-decoration: none;
+}
 header { 
     display: flex;
     justify-content: space-between;
@@ -17,17 +20,21 @@ header {
     width: 100%;
     height: 84px;
 }
+section {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }
 h1 {
     font-weight: 600;
     font-size: 48px;
     line-height: 56px;
 }
-section {
-    width: 100%;
-    display: flex;
- }
+
  p {
     font-weight: 500;
     font-size:18px;
     line-height: 30px;
  }
+
