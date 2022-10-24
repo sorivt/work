@@ -19,13 +19,15 @@
     font-size: 64px;
     line-height: 72px ;
 }
-.button1 {
+.button1{
     background: #F58A07;
     width: 199px;
     height: 54px;
     border-radius: 27px;
     margin-bottom: 40px;
     margin-top: 20px;
+}
+.button1 a{
     color: white;
 }
 .button2 {
@@ -138,10 +140,19 @@
     mix-blend-mode: multiply;
     background: #F58A07;
     width: 153px;
-    height: 100%;
+    height: 670px;
     position: absolute;
     border-radius: 20px 0 0 20px;
 }
+.multiply2 {
+    mix-blend-mode: multiply;
+    background: #F58A07;
+    width: 120px;
+    height: 466px;
+    position: absolute;
+    border-radius: 20px 0 0 20px;
+}
+
 .service {
     width: 100%;
     height: 682px;
@@ -164,14 +175,6 @@
 }
 .service-right {
     width: 40%;
-}
-.service-multiply2 {
-    mix-blend-mode: multiply;
-    background: #F58A07;
-    width: 120px;
-    height: 466px;
-    position: absolute;
-    border-radius: 20px 0 0 20px;
 }
 .service-left a {
     font-weight: 500;
@@ -306,6 +309,26 @@
 .feature1-image {
     width: 50%;
 }
+.multiply-feature{
+    position: absolute;
+    width: 95px;
+    height: 97px;
+    background: #F58A07;
+    mix-blend-mode: multiply;
+    border-radius: 20px;
+    margin-top: 178px;
+    margin-right: 573px;
+}
+.multiply-feature2{
+    position: absolute;
+    width: 95px;
+    height: 97px;
+    background: #F58A07;
+    mix-blend-mode: multiply;
+    border-radius: 20px;
+    margin-top: 178px;
+    margin-left: 573px;
+}
 .feature1-text {
     width: 40%;
     height: 294px;
@@ -330,12 +353,14 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
+    align-items: start;
 }
 .careers-cards1 {
     width: 30%;
     height: 181px;
     background: rgba(193, 228, 255, 0.3);
     border-radius: 20px;
+    margin-bottom: 50px;
 }
 .careers-cards1 a {
     text-decoration: none;
@@ -378,14 +403,8 @@
     display: flex;
     justify-content: space-evenly;
 } 
-.blog .cards {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
- }
  .blog-card {
-    width: 400px;
+    width: 30%px;
     height: 507px;
     background: #EDF7FF;
     border-radius: 20px;
@@ -400,6 +419,9 @@
  }
  .blog-post {
     width: 100%;
+ }
+ .blog-post img {
+    border-radius: 30px;
  }
  .blogpost-text {
     width: 100%;
