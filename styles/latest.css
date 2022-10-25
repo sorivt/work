@@ -1,11 +1,10 @@
-.latest-section {
+.latest {
     width: 100%;
     height: 869px;
     background: #DCEAF5;
 }
-.cards{
+.latest-section{
     display: flex;
-    align-items: center;
     width: 100%;
     justify-content: space-between;
 }
@@ -14,11 +13,13 @@
     height: 507px;
     background: #FFFFFF;
     border-radius: 20px;
+} 
+.latest-card img {
+    border-radius: 20px 20px 0px 0px;
+}
+.blog-card h2,a,p {
     margin: 10px;
-}
-.latest-section h1{
-    padding-top: 96px;
-}
+ }
 .latest-card h2 {
     font-weight: 500;
     font-size: 24px;
@@ -27,4 +28,7 @@
 .latest-card a {
     color: #F58A07;
     text-decoration: none;
+}
+.latest-card a::after {
+    content: "\2192";
 }

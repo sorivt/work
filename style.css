@@ -61,6 +61,9 @@
     text-decoration: none;
     color: #F58A07;
 }
+.section2-down a::after {
+    content: "→";
+}
 .section2-down img{
     border-radius: 20px;
 }
@@ -132,27 +135,22 @@
     font-size: 24px;
     line-height: 106.5%;
 }
+.about-right {
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+}
 .aboutright-img{
-    height: 670px;
     border-radius: 20px;
 }
 .multiply {
     mix-blend-mode: multiply;
     background: #F58A07;
-    width: 153px;
-    height: 670px;
+    width: 25%;
+    height: 100%;
     position: absolute;
     border-radius: 20px 0 0 20px;
 }
-.multiply2 {
-    mix-blend-mode: multiply;
-    background: #F58A07;
-    width: 120px;
-    height: 466px;
-    position: absolute;
-    border-radius: 20px 0 0 20px;
-}
-
 .service {
     width: 100%;
     height: 682px;
@@ -173,8 +171,16 @@
 .service-left {
     width: 40%;
 }
+.service-left a::after {
+    content: "\2192";
+}
 .service-right {
     width: 40%;
+    height: 100%;
+    position: relative;
+}
+.service-right img {
+    height: 100%;
 }
 .service-left a {
     font-weight: 500;
@@ -195,14 +201,19 @@
     line-height: 24px;
     color: #F58A07;
 }
+.service-button1 a {
+    color: #F58A07;
+}
 .service-button2 {
     border-radius: 31px;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     background: none;
-    color: #1D3444;
     border: 1px solid #A8BCCC
+}
+.service-button2 a {
+    color: rgba(6, 50, 85, 0.3);
 }
 .service-ribbon img{ 
     margin-top: -16px;
@@ -282,21 +293,28 @@
     width: 100%;
     height: 650px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
-.header-text {
+.header-left {
     width: 40%;
 }
-.header-text button {
+.header-right {
+    width: 50%;
+    position: relative;
+}
+.header-right img {
+    width: 100%;
+}
+
+.header-left button {
     width: 171px;
     height: 54px;
     background: #F58A07;
     border-radius: 27px;
-    color: #FFFFFF;;
 }
-.header-image {
-    width: 50%;
+.header-left button a {
+    color: #FFFFFF;
 }
 .feature1 {
     width: 100%;
@@ -304,10 +322,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 48px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.feature1-text {
+    width: 40%;
+    height: 294px;
 }
 .feature1-image {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    width: 45%
+}
+.feature1-image img {
+    width: 100%;
 }
 .multiply-feature{
     position: absolute;
@@ -316,22 +344,26 @@
     background: #F58A07;
     mix-blend-mode: multiply;
     border-radius: 20px;
-    margin-top: 178px;
-    margin-right: 573px;
 }
-.multiply-feature2{
-    position: absolute;
-    width: 95px;
-    height: 97px;
-    background: #F58A07;
-    mix-blend-mode: multiply;
-    border-radius: 20px;
-    margin-top: 178px;
-    margin-left: 573px;
+.feature1st .multiply-feature{
+    left: 273px;
+    top: 1044px;
 }
-.feature1-text {
-    width: 40%;
-    height: 294px;
+.feature2nd .multiply-feature {
+    left: 1553px;
+    top: 1866px;
+}
+.feature3rd .multiply-feature  {
+    left: 272px;
+    top: 2489px;
+}
+.feature4th .multiply-feature  {
+    left: 1553px;
+    top: 3222px;
+}
+.feature5th .multiply-feature  {
+    left: 276px;
+    top: 3970px;
 }
 .feature2 {
     width: 100%;
@@ -339,7 +371,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 48px;
+    margin-top: 48px;
 }
 .feature2-text {
     width: 40%;
@@ -351,16 +383,13 @@
 .careers-cards {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
-    align-items: start;
 }
 .careers-cards1 {
-    width: 30%;
+    width: 28%;
     height: 181px;
     background: rgba(193, 228, 255, 0.3);
     border-radius: 20px;
-    margin-bottom: 50px;
+    margin: 2%;
 }
 .careers-cards1 a {
     text-decoration: none;
@@ -377,13 +406,27 @@
     align-items: center;
     justify-content: space-between;
 }
-.blog-header .headertext-img {
+.blog-header .blogheader-profile {
     display: flex;
-    justify-content: space-evenly;
+    align-items: flex-start;
 }
-.headertext-text a {
+.blogheader-left {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.blogheader-right {
+    width: 40%;
+}
+.blogheader-right img{
+    border-radius: 20px;
+}
+.blogheader-text a {
     text-decoration: none;
     color: #F58A07;
+}
+.blogheader-left a::after {
+    content: "\2192";
 }
 .blog-latestsection {
     width: 100%;
@@ -397,6 +440,9 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+.blog-cards a::after {
+    content: "\2192";
 }
 .cards-bottom {
     width: 100%;
@@ -433,25 +479,35 @@
  }
  .career2-job {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+ }
+ .career2-job .job-left {
+    width: 50%;
+ }
+ .career2-job .job-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
  .career2-header {
     margin-bottom: 40px;
  }
  .career2-details {
     width: 100%;
+    height: 441px;
     background: rgba(193, 228, 255, 0.3);
     border-radius: 20px;
     display: flex;
-    padding: 40px;
     justify-content: space-evenly;
+    padding: 20px;
  }
  .details-left {
-    width: 50%;
+    width: 30%;
  }
  .details-right {
-    width: 842px;
-    height: 308px;
+    width: 65%;
  }
 .details-orange {
     color: #F58A07;
@@ -488,7 +544,7 @@
     color: #FFFFFF;
     margin-bottom: 100px;
 }
-.contactus-header {
+.contactus-top {
     width: 100%;
     display: flex;
     align-items: center;
@@ -496,15 +552,15 @@
     margin-top: 40px;
     justify-content: space-between;
 }
-.header-left {
+.contactus-left {
     width: 45%;
 }
-.header-right {
+.contactus-right {
     width: 50%;
     display: flex;
     justify-content: space-around;
 }
-.contact-sec {
+.contact-bottom {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -539,6 +595,8 @@
     height: 54px;
     background: #F58A07;
     border-radius: 31px;
-    color: #FFFFFF;
     margin-bottom: 100px;
+}
+.contact-button a  {
+    color: #FFFFFF;
 }
